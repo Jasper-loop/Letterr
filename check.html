@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="pngegg.png">
+    <title>Letter</title>
+    <link rel="stylesheet" href="/Letter/css/check.css">
+    </head>
+    <body>
+        <h1>CLICK THE ENVELOPE BABY💌</h1>
+        <div class="main">
+        
+        <div class="scene">
+                <div class="envelope" id="envelope">
+                    <div class="back"></div>
+                    
+                    <div class="letter">
+                        <h3 style="margin-bottom:5px;">HI BABY😚</h3>
+                        <p style="font-size: 20px; letter-spacing: 1.5px; padding-top:10px">
+                            Hi baby HAPPY 1ST MONTHSARY, also I just want you to know that I love you and I'll always love you until time gets tired of moving forward🫶.
+                        </p>
+                    </div>
+                    
+                    <div class="front"></div>
+                    <div class="flap"></div>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            const envelope = document.getElementById("envelope");
+
+let opened = false;
+
+envelope.addEventListener("pointerdown", function () {
+  if (opened) return;
+
+  opened = true;
+  envelope.classList.add("open");
+});
+        </script>
+    </body>
+    </html>

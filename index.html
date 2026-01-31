@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/x-icon" href="pngegg.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Letter</title>
+    <link rel="stylesheet" href="/Letter/css/index.css">
+</head>
+<body>
+    <div class="main">
+        <img src="/Letter/images/sappy-sappy-seals.gif" width="40%" alt="seal">
+        <div>
+            <h1>Hi Baby!</h1>
+            <p>WOULD YOU LIKE TO OPEN YOUR GIFT?</p>
+            <div class="buttons">
+                <i class="fa fa-check" id="check" onclick="check()"></i>
+                <i class="fa fa-close" id="ekis" onclick="location.href='ekis.html'" onmouseover="moveBox()"></i>
+            </div>
+        </div>
+    </div>
+    <script>
+        function check(){
+            location.href = "check.html";
+        }
+  function moveBox() {
+  const box = document.getElementById("ekis");
+  const x = Math.random() * 1200;
+  const y = Math.random() * 500;
+  box.style.position = "absolute";
+
+  box.style.left = x + "px";
+  box.style.top = y + "px";
+}
+
+        
+    </script>
+</body>
+</html>
