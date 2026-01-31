@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/x-icon" href="pngegg.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Letter</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing: border-box;
+        }
+        body{
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            background-image: url('bg.png');
+            background-size: contain;
+            background-repeat: repeat;
+            background-position: center center;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            position: relative;
+        }
+        #check, #ekis{
+            font-size: 50px;
+            color:violet;
+            background-color: rgb(185, 101, 185);
+            border-radius: 50%;
+            padding:5px;
+            cursor:pointer;
+            margin:0 10px;
+        }
+        #ekis{
+            font-size: 50px;
+            color:violet;
+            background-color: rgb(185, 101, 185);
+            border-radius: 50%;
+            padding:5px 10px;
+            
+        }
+        #ekis:hover{
+            color:rgb(255, 0, 255);
+            transition: 0.3s linear;
+        }
+        #check:hover{
+            color:rgb(255, 0, 255);
+            transition: 0.3s linear;
+        }
+        .buttons{
+            padding:20px;
+        }
+        .main{
+            text-align: center;
+        }
+        p{
+            margin-bottom:10px;
+        }
+        h1{
+            margin-top:10px;
+            font-size: 50px;
+            color:violet;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <img src="sappy-sappy-seals.gif" width="40%" alt="seal">
+        <div>
+            <h1>Hi Baby!</h1>
+            <p>WOULD YOU LIKE TO OPEN YOUR GIFT?</p>
+            <div class="buttons">
+                <i class="fa fa-check" id="check" onclick="check()"></i>
+                <i class="fa fa-close" id="ekis" onclick="location.href='ekis.html'" onmouseover="moveBox()"></i>
+            </div>
+        </div>
+    </div>
+    <script>
+        function check(){
+            location.href = "check.html";
+        }
+  function moveBox() {
+  const box = document.getElementById("ekis");
+  const x = Math.random() * 1200;
+  const y = Math.random() * 500;
+  box.style.position = "absolute";
+
+  box.style.left = x + "px";
+  box.style.top = y + "px";
+}
+
+        
+    </script>
+</body>
+</html>
